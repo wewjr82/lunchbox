@@ -54,7 +54,7 @@ header {
 }
 
 #top ul li a:visited {
-  color: white;
+  color: rgb(0, 0, 255);
 }
 
 /* HERO */
@@ -396,5 +396,5 @@ hr {
 }
 
 #foot_nav ul li a:visited {
-  color: white;
+  color: #0000ff;
 }
