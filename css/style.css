@@ -398,3 +398,56 @@ hr {
 #foot_nav ul li a:visited {
   color: #0000ff;
 }
+
+/* MOBILE */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #18191e;
+  }
+  #hero {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #000000;
+  }
+  #address {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  #booking {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #f2f2f4;
+    text-align: center;
+    color: #616161;
+    font-family: "PT Sans", sans-serif;
+    padding: 0.625rem;
+  }
+  #view_more {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+  }
+  footer {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #18191e;
+    font-family: "PT Sans", sans-serif;
+  }
+}
