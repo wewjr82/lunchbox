@@ -499,7 +499,7 @@ hr {
     text-align: center;
   }
 
-  #hours {
+  .table {
     margin: auto;
   }
   #connect {
