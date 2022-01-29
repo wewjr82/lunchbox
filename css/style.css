@@ -29,8 +29,8 @@ header {
 }
 
 #top > ul {
-  text-align: center;
   display: flex;
+  justify-content: center;
 }
 
 #top li {
