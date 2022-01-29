@@ -5,7 +5,7 @@ let booked = document.querySelector("#booking");
 let view = document.querySelector("#view_more");
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector('ul');
+const navMenu = document.querySelector("ul");
 
 follow.addEventListener("click", function () {
   document.querySelector("#follow_twitter").innerText = "WE'LL FOLLOW BACK";

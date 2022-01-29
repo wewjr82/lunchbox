@@ -498,6 +498,10 @@ hr {
   #about_p {
     text-align: center;
   }
+
+  #hours {
+    margin: auto;
+  }
   #connect {
     color: #d6d7dc;
 
