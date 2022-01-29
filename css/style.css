@@ -30,6 +30,7 @@ header {
 
 #top > ul {
   text-align: center;
+  display: flex;
 }
 
 #top li {
@@ -59,6 +60,20 @@ header {
 
 #top ul li a:visited {
   color: rgb(0, 0, 255);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
 }
 
 /* HERO */
@@ -408,8 +423,43 @@ hr {
 /* Smartphones & iPhone 4, 5, 6, 7, 8 ----------- */
 
 @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
- 
- 
+  header #top ul {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #18191e;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    position: absolute;
+  }
+  header #top ul.active {
+    left: 0;
+    z-index: 1;
+  }
+  header #top ul li {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: #18191e;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   #main_head {
     color: #fff;
     font-family: "PT Sans", sans-serif;
@@ -419,6 +469,7 @@ hr {
     margin: 0 0;
     display: none;
   }
+
   #img_gallery {
     flex-basis: 100%;
     flex-grow: 1;
