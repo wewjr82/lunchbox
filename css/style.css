@@ -538,7 +538,7 @@ hr {
 
 /* meduim ----------- */
 
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-device-width: 900px) {
   header #top ul {
     position: fixed;
     left: -100%;
